@@ -16,10 +16,10 @@ function App() {
     //   {/* <p>Hola mundo</p> */}
     //   <Inicio/>
     // </div>
-    <BrowserRouter>
+    <BrowserRouter basename='/'>
       <Routes>
         <Route path="/login" element={<LoginPage/>}/>
-        <Route path="/auth" element={<Auth/>}/>
+        <Route path="/" element={<Auth/>}/>
         <Route path="/register" element={<RegisterPage/>}/>
       </Routes>
     </BrowserRouter>
